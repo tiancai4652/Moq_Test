@@ -48,5 +48,27 @@ namespace Moq_Test.Offical
             mock.VerifySet(foo => foo.Name = "foo");
             Assert.Equal("foo", mock.Object.Name);
         }
+
+
+        #region What is Stub.
+
+        [Trait("Property", "SetupProperty:None Input")]
+        [Fact]
+        public void xx()
+        {
+            mock.SetupSet(foo => foo.Name = "foo");
+            // start "tracking" sets/gets to this property
+            mock.SetupProperty(f => f.Name);
+            Assert.Equal("foo", mock.Object.Name);
+        }
+
+        public void xx1()
+        {
+          
+            // alternatively, provide a default value for the stubbed property
+            mock.SetupProperty(f => f.Name, "foo");
+        }
+
+        #endregion
     }
 }
