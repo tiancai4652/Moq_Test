@@ -9,7 +9,7 @@ using Xunit;
 
 namespace Moq_Test.Offical
 {
-    public class Office_MatchingArguments
+    public class Official_MatchingArguments
     {
 
         //Get:
