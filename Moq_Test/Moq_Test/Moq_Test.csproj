@@ -73,6 +73,7 @@
     <Compile Include="IHero.cs" />
     <Compile Include="ISkill.cs" />
     <Compile Include="Offical\BaseClass.cs" />
+    <Compile Include="Offical\Office_MatchingArguments.cs" />
     <Compile Include="Offical\Official_Method.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
